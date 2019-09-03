@@ -1,0 +1,9 @@
+<view>
+  <view class="textCenter" bind:tap="choseCity">选择城市</view>
+  <cityChose id="cityChose" bind:bindchange="cityChange"></cityChose>
+  <view class="textCenter mt20">
+    <view>{{city[0].n}}</view>
+    <view>{{city[1].n}}</view>
+    <view>{{city[2].n}}</view>
+  </view>
+</view>

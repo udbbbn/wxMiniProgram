@@ -1,0 +1,6 @@
+.mt20 {
+  margin-top: 20rpx;
+}
+.textCenter {
+  text-align: center;
+}
