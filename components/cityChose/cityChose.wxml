@@ -1,0 +1,22 @@
+<!--components/picker/picker.wxml-->
+<view class="container" wx:if="{{isShow}}">
+    <view class="picker-box {{transformClass}}">
+        <view class="header">
+            <text class="cancel" bind:tap="cancelHandle">取消</text>
+            <text class="comfirm" bind:tap="comfirmHandle">确认</text>
+        </view>
+        <view class="main">
+            <picker-view value="" indicator-class="" indicator-style="height: 35px" mask-class="" mask-style="" bindchange="pickChangeHandle">
+                <picker-view-column>
+                    <view style="line-height:35px" class="picker-opt" wx:for="{{curJson}}" wx:key="{{index}}">{{item.n}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view style="line-height:35px" class="picker-opt" wx:for="{{curJson[proIdx].cs}}" wx:key="{{index}}">{{item.n}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view style="line-height:35px" class="picker-opt" wx:for="{{curJson[proIdx].cs[cityIdx].as}}" wx:key="{{index}}">{{item.n}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

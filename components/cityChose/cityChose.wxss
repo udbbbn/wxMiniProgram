@@ -1,0 +1,57 @@
+/* components/picker/picker.wxss */
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.picker-box {
+    width: 100%;
+    height: 650rpx;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateY(650rpx);
+    transition: all .3s;
+}
+.transY0 {
+  transform: translateY(0);
+}
+.cancel {
+    color: #716f6f
+}
+.comfirm {
+    color: #4dbf6e;
+}
+.header {
+    width: 100%;
+    height: 100rpx;
+    box-sizing: border-box;
+    padding: 0 30rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1rpx solid #eee;
+}
+.main {
+    width: 100%;
+    height: 550rpx;
+}
+picker-view {
+    width: 100%;
+    height: 550rpx;
+    box-sizing: border-box;
+    padding: 0 10rpx;
+}
+picker-view-column {
+    width: 100%;
+    text-align: center;
+}
+.picker-opt {
+    font-size: 32rpx;
+}
